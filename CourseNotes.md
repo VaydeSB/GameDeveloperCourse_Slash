@@ -106,3 +106,8 @@ UE has its own inheritance hierarchy.
 > Garbage Collection is when a program manages memory associated with the project, & automatically deletes objects as soon as they are no longer being used.
 
 UHT: Unreal Header Tool
+
+# Section 5:42. Blueprint Creation
+
+> Blueprint naming conventions start with BP_
+> 
