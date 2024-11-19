@@ -1,6 +1,8 @@
 #	COURSE NOTES
 	These course notes are for the Udemy Course: Unreal Engine 5 C++ The Ultimate Game Developer Course
 
+* Best Viewed in github or IDE.
+
 You can find the course here:
 https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/?couponCode=KEEPLEARNING
 
@@ -22,8 +24,9 @@ It seems that FAB replaces the marketplace, as Bridge is still working.   Will u
 # Section 4:38.	C++ Refresher
 ##	Classes and Inheritance
 
-Classes have their own	* Variables
-					* Functions
+Classes have their own	
+* Variables
+* Functions
 
 Each child class will inherit Variables & Functions from the parent class.
 Each child class can have child variables & child functions.
@@ -32,75 +35,74 @@ Parent classes can mark their functions as virtual.  Child classes can override 
 Child classes can call their override functions, as well as the original parent functions.
 A child class can inherit from multiple parents.
 
-* A pointer is a variable designed to hold an object's address.
+> A pointer is a variable designed to hold an object's address.
 
 A variable of type pointer to parent is capable of storing the address of an object derived from the parent class.
 
-UE has it's own inheritance heirarchy.
+UE has its own inheritance hierarchy.
 * UObject
 * AActor
 * APawn
 * ACharacter
 
-Everything that derives from UOBject, that is not an actor, has U prefixed on it's class name.
+> Everything that derives from UObject, that is not an actor, has U prefixed on it's class name.
 
-Everything derived from Actor has it's name prefixed with an A.
+> Everything derived from Actor has it's name prefixed with an A.
 
-**UObject
+**UObject**
 * Stores Data
 * Cannot be placed in a level
 
-**AActor
+**AActor**
 * Can be placed in a level
 * Can have visual representation
 
-**APawn
+**APawn**
 * Can be possessed by a controller
 
-**ACharacter
+**ACharacter**
 * Has a character movement component
 * Has character-specific functionality
 
 ## "Is A" vs "Has A" Relationships
 
-**Parent Class
-	* a parent is not a child
-	* a parent is not a grandchild
-**Child Class
-	* a child is a parent
-	* a child is not a grandchild
-**Grandchild Class
-	* a grandchild is a child
-	* a grandchild is a parent
+**Parent Class**
+* a parent is not a child
+* a parent is not a grandchild
 
-**UObject
-	* a UObject is not an AActor
-	* a UObject is not an APawn
-**AActor
-	* an AActor is a UObject
-	* an AActor is not an APawn
-**APawn
-	* an APawn is an AActor
-	* an APawn is a UObject
+**Child Class**
+* a child is a parent
+* a child is not a grandchild
+
+**Grandchild Class**
+* a grandchild is a child
+* a grandchild is a parent
+
+**UObject**
+* a UObject is not an AActor
+* a UObject is not an APawn
+
+**AActor**
+* an AActor is a UObject
+* an AActor is not an APawn
+
+**APawn**
+* an APawn is an AActor
+* an APawn is a UObject
 
 # Section 4:39. Reflection and Garbage Collection.
 
 ## Reflection
 
-**Reflection is the ability of a program to examine itself at runtime.
+> Reflection is the ability of a program to examine itself at runtime.
 
-A program will analyze what's happening, inside of itself, & harvest data about the program.
+> A program will analyze what's happening, inside of itself, & harvest data about the program.
 
-**Harvesting Data:
-	* The Unreal Editor System
-	* Expose data to Blueprints
-	* Garbage Collection
-** Garbage Collection is when a program manages memory associated with the project, & automatically deletes objects as soon as they are no longer being used.
+**Harvesting Data:**
+* The Unreal Editor System
+* Expose data to Blueprints
+* Garbage Collection
+
+> Garbage Collection is when a program manages memory associated with the project, & automatically deletes objects as soon as they are no longer being used.
 
 UHT: Unreal Header Tool
-
-
-
-
-
- 
