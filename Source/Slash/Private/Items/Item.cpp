@@ -2,6 +2,9 @@
 
 
 #include "Items/Item.h"
+#include "DrawDebugHelpers.h"
+#include "Slash/Slash.h"
+
 
 // Sets default values
 AItem::AItem()
@@ -19,6 +22,11 @@ void AItem::BeginPlay()
 	{
 		GEngine->AddOnScreenDebugMessage(1, 60.f, FColor::Purple, FString("Item OnScreen Message!"));
 	}
+
+	UWorld* World = GetWorld();
+
+	FVector Location = GetActorLocation();
+	DRAW_SPHERE(Location);
 }
 
 void AItem::Tick(float DeltaTime)
