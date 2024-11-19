@@ -12,3 +12,10 @@ https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/
 	I am skipping Section 2: Realistic Landscapes until the landscapes created there are actually needed inside of the course.  There are 4 hours of lectures there that expertely introduce you to the enviornment creation system in UE, but once you complete it you don't return to it at all.  My stoppiing point was in Section 18, and the learnings covered in Section 2 were not touched once Section 3 was started.   I will review it once we are prompted to return to it and will notate it.
 
 The course notes here, and the git commits, -should- match up by #.  I make myself no promises to keep it aligned, but I will strive to do so.
+
+### Section 2:9. Assets now under FAB
+
+ 
+
+It seems that FAB replaces the marketplace, as Bridge is still working.   Will update as warranted.
+ 
