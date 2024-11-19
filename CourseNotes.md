@@ -18,4 +18,73 @@ The course notes here, and the git commits, -should- match up by #.  I make myse
  
 
 It seems that FAB replaces the marketplace, as Bridge is still working.   Will update as warranted.
+
+### Section 4:38.	C++ Refresher
+##	Classes and Inheritance
+
+Classes have their own	* Variables
+					* Functions
+
+Each child class will inherit Variables & Functions from the parent class.
+Each child class can have child variables & child functions.
+
+Parent classes can mark their functions as virtual.  Child classes can override those functions, creating child versions of those functions.
+Child classes can call their override functions, as well as the original parent functions.
+A child class can inherit from multiple parents.
+
+* A pointer is a variable designed to hold an object's address.
+
+A variable of type pointer to parent is capable of storing the address of an object derived from the parent class.
+
+UE has it's own inheritance heirarchy.
+* UObject
+* AActor
+* APawn
+* ACharacter
+
+Everything that derives from UOBject, that is not an actor, has U prefixed on it's class name.
+
+Everything derived from Actor has it's name prefixed with an A.
+
+UObject
+* Stores Data
+* Cannot be placed in a level
+
+AActor
+* Can be placed in a level
+* Can have visual representation
+
+APawn
+* Can be possessed by a controller
+
+ACharacter
+* Has a character movement component
+* Has character-specific functionality
+
+## "Is A" vs "Has A" Relationships
+
+### Parent Class
+	* a parent is not a child
+	* a parent is not a grandchild
+### Child Class
+	* a child is a parent
+	* a child is not a grandchild
+### Grandchild Class
+	* a grandchild is a child
+	* a grandchild is a parent
+
+### UObject
+	* a UObject is not an AActor
+	* a UObject is not an APawn
+### AActor
+	* an AActor is a UObject
+	* an AActor is not an APawn
+###	APawn
+	* an APawn is an AActor
+	* an APawn is a UObject
+
+
+
+
+
  
