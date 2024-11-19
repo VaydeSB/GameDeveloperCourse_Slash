@@ -13,13 +13,13 @@ https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/
 
 The course notes here, and the git commits, -should- match up by #.  I make myself no promises to keep it aligned, but I will strive to do so.
 
-### Section 2:9. Assets now under FAB
+# Section 2:9. Assets now under FAB
 
  
 
 It seems that FAB replaces the marketplace, as Bridge is still working.   Will update as warranted.
 
-### Section 4:38.	C++ Refresher
+# Section 4:38.	C++ Refresher
 ##	Classes and Inheritance
 
 Classes have their own	* Variables
@@ -46,42 +46,58 @@ Everything that derives from UOBject, that is not an actor, has U prefixed on it
 
 Everything derived from Actor has it's name prefixed with an A.
 
-UObject
+**UObject
 * Stores Data
 * Cannot be placed in a level
 
-AActor
+**AActor
 * Can be placed in a level
 * Can have visual representation
 
-APawn
+**APawn
 * Can be possessed by a controller
 
-ACharacter
+**ACharacter
 * Has a character movement component
 * Has character-specific functionality
 
 ## "Is A" vs "Has A" Relationships
 
-### Parent Class
+**Parent Class
 	* a parent is not a child
 	* a parent is not a grandchild
-### Child Class
+**Child Class
 	* a child is a parent
 	* a child is not a grandchild
-### Grandchild Class
+**Grandchild Class
 	* a grandchild is a child
 	* a grandchild is a parent
 
-### UObject
+**UObject
 	* a UObject is not an AActor
 	* a UObject is not an APawn
-### AActor
+**AActor
 	* an AActor is a UObject
 	* an AActor is not an APawn
-###	APawn
+**APawn
 	* an APawn is an AActor
 	* an APawn is a UObject
+
+# Section 4:39. Reflection and Garbage Collection.
+
+## Reflection
+
+**Reflection is the ability of a program to examine itself at runtime.
+
+A program will analyze what's happening, inside of itself, & harvest data about the program.
+
+**Harvesting Data:
+	* The Unreal Editor System
+	* Expose data to Blueprints
+	* Garbage Collection
+** Garbage Collection is when a program manages memory associated with the project, & automatically deletes objects as soon as they are no longer being used.
+
+UHT: Unreal Header Tool
 
 
 
