@@ -16,4 +16,4 @@ DrawDebugPoint(GetWorld(), EndLocation, 30.f, FColor::Red, true); \
 {\
 DrawDebugLine(GetWorld(), StartLocation, EndLocation, FColor::Red, false, -1.f, 0, 1.f); \
 DrawDebugPoint(GetWorld(), EndLocation, 30.f, FColor::Red, false, -1.f); \
-}
+} 
