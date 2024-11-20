@@ -13,3 +13,7 @@ V.001 7:36am
 **11/19/2024 3:51pm**
 Course progress has been regained up to Section 5:48. Custom Header Files.
 > 12 sections remaining
+
+**11/20/2024 4:30pm**
+Course progress has been regained up to Section 7:64. The Pawn Class.
+> 11 sections remaining
