@@ -110,3 +110,11 @@ UHT: Unreal Header Tool
 # Section 5:42. Blueprint Creation
 
 > Blueprint naming conventions start with BP_
+
+# Section 6:55. Exposing Variables to Blueprint
+
+**UPROPERTY Settings**
+* EditDefaultsOnly restricts variables to the BP Event Graph only.
+* EditInstanceOnly exposes the property to be changed on the instance (inside the Details pane).
+* EditAnywhere allows changes on the default & instance.
+
