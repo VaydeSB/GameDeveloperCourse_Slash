@@ -12,7 +12,7 @@ AItem::AItem()
 
 void AItem::BeginPlay()
 {
-	Super::BeginPlay();
+	Super::BeginPlay();	
 }
 
 float AItem::TransformedCos()
@@ -25,6 +25,8 @@ float AItem::TransformedSin()
 	return Amplitude  *  FMath::Sin(RunningTime * TimeConstant);
 }
 
+
+
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -36,5 +38,8 @@ void AItem::Tick(float DeltaTime)
 	
 	DRAW_SPHERE_SingleFrame(GetActorLocation());
 	DRAW_VECTOR_SingleFrame(GetActorLocation(), GetActorLocation() + GetActorForwardVector() *100.f);
+
+	FVector AvgVector = Avg<FVector>(GetActorLocation(), FVector::ZeroVector);
+	DRAW_POINT_SingleFrame(AvgVector);	
 }
 
