@@ -117,4 +117,10 @@ UHT: Unreal Header Tool
 * EditDefaultsOnly restricts variables to the BP Event Graph only.
 * EditInstanceOnly exposes the property to be changed on the instance (inside the Details pane).
 * EditAnywhere allows changes on the default & instance.
+* VisibleDefaultOnly allows for viewing of the property in Blueprints, without the ability to edit it. 
+* VisibleInstanceOnly allows for viewing of the property in the Instance, without the ability to edit it.
+* VisibleAnywhere allows for viewing of the property in both Blueprints & in the instance, without the ability to edit it.
+
+
+* UPROPERTY will initialize a variable with a default value of 0,  if it is exposed without a value.
 
